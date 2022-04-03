@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>180</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Department
+--
+Department_id: int (PK)
+Supervisor_id: int
+OfficeNumber: int
+Phone: varchar(50)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>180</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Supervisor
+--
+Supervisor_id: int (PK)
+Name: varchar(50)
+PhoneNumber: varchar(50)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>180</y>
+      <w>189</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+Employee_id: int (PK)
+Department_id: int
+Name: varchar(50)
+Email: varchar(50)
+Phone: varchar(50)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>396</y>
+      <w>207</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Project
+--
+Project_id: int (PK)
+Department_id: int
+ProjectName: varchar(50)
+MaximunHours: int
+StartDate: date
+EndDate: date
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>396</y>
+      <w>225</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Qualification
+--
+qualification_id: int (PK)
+Employee_id: int
+Position: varchar(50)
+Date: date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>216</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>747</x>
+      <y>270</y>
+      <w>27</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>261</y>
+      <w>27</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>216</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
